@@ -1,11 +1,17 @@
 window.onload = function(){
   var oLeft = document.getElementById('left');
   var oRight = document.getElementById('right');
+  var rightA = oRight.getElementsByTagName('a');
   var bBtnh = document.getElementById('btnh');
+  var iFrame = document.getElementsByTagName('iframe')[0];
 
   var oMainContentR = document.getElementById('mainContent-r');
   var oMainContentL = document.getElementById('mainContent-l');
   var oUpperBox = document.getElementsByClassName('upperBox')[0];
+
+
+  changeContent();
+
 
   bBtnh.onclick = function(){
     bBtnh.style.display = 'none';
@@ -13,11 +19,14 @@ window.onload = function(){
       oLeft.getElementsByClassName('btn')[i].style.display = 'block';
     }
     startMove(oLeft, 'left', 0);
+    // startMove(iFrame, 'width', 400);
+    startMove(iFrame, 'height', 225);
+    iFrame.style.width = '400px'
     oLeft.style.width = '25%';
     window.setTimeout(function(){
       oRight.style.display = 'block';
       startMove(oRight, 'opacity', 100);
-    }, 850)
+    }, 800)
   }
 
   oUpperBox.onclick = function(){
@@ -25,7 +34,20 @@ window.onload = function(){
     oMainContentR.style.display = 'block';
   }
 
+  for(var j=0; j<rightA.length; j++){
+    var imgA = rightA[j].getElementsByTagName("img")[0];
+    imgA.index = j;
+
+    imgA.onmouseover = function(){
+      startMove(this, 'opacity', 60);
+      console.log(this.style.opacity);
+    }
+    imgA.onmouseout = function(){
+      startMove(this, 'opacity', 100);
+    }
+  }
 }
+
 
 
 
