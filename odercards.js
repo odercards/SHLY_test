@@ -1,21 +1,52 @@
 window.onload = function(){
-  var oTheme = document.getElementsByClassName('theme');
+  var oNone = document.getElementById('None');
+  var oBanner = document.getElementById('Banner');
+  var oTheme = oBanner.getElementsByClassName('theme');
   var oCm = document.getElementById('CM');
   var bCm = oCm.getElementsByClassName('cmBtn')[0];
+  var oSidepoint = document.getElementById('Sidepoint');
+  var oSTheme = oSidepoint.getElementsByClassName('theme');
+  var Width = document.documentElement.clientWidth;
   var Height = window.innerHeight;
   isClick = false;
 
-  //動畫點擊滑入頁
+  //外連區
+  changeContent();
+
+
+  //螢幕過小，限制觀看
+  if(Width < 1200){
+    document.documentElement.style.overflowY = 'hidden'; 
+    oNone.style.display = 'block';
+  }else{
+    document.documentElement.style.overflowY = 'scroll'; 
+    oNone.style.display = 'none';
+  }
+  window.onresize = function(){
+    Width = document.documentElement.clientWidth;
+    if(Width < 1200){
+      document.documentElement.style.overflowY = 'hidden'; 
+      oNone.style.display = 'block';
+    }else{
+      document.documentElement.style.overflowY = 'scroll'; 
+      oNone.style.display = 'none';
+    }
+  }
+
+
+  //教學動畫頁面點擊滑入
   bCm.onclick = function(){
     if(isClick == false){
       startMove(oCm, {
         marginTop: 0
       });
+      document.documentElement.style.overflowY = 'hidden'; 
       isClick = !isClick;
     }else if(isClick == true){
       startMove(oCm, {
         marginTop: parseInt(-1 * Height)
       });
+      document.documentElement.style.overflowY = 'scroll'; 
       isClick = !isClick;
     }
   }
@@ -30,7 +61,7 @@ window.onload = function(){
       });
       this.children[1].style.display = 'block';
       startMove(this.children[1], {
-        marginTop: parseInt(0.35 * Height)
+        marginTop: parseInt(0.30 * Height)
       });
     }
     oTheme[i].onmouseout = function(){
@@ -40,10 +71,30 @@ window.onload = function(){
       });
       this.children[1].style.display = 'none';
       startMove(this.children[1], {
-        marginTop: parseInt(0.15 * Height)
+        marginTop: parseInt(0.10 * Height)
       });
     }
   }
 
 
+  //滑動效果
+  window.onscroll = function(){
+    var t = document.documentElement.scrollTop || document.body.scrollTop;
+    //側邊切換主題 + 隱藏頂部
+    if(t >= 750) {
+      startMove(oSidepoint, {
+        marginTop: t - 750
+      });
+      startMove(oCm, {
+        marginTop: parseInt(-1.1 * Height)
+      });
+    }else {
+      startMove(oSidepoint, {
+        marginTop: 0
+      });
+      startMove(oCm, {
+        marginTop: parseInt(-1 * Height)
+      });
+    }
+  }
 }
