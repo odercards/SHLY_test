@@ -6,6 +6,7 @@ window.onload = function(){
   var bCm = oCm.getElementsByClassName('cmBtn')[0];
   var oSidepoint = document.getElementById('Sidepoint');
   var oSTheme = oSidepoint.getElementsByClassName('theme');
+
   var Width = document.documentElement.clientWidth;
   var Height = window.innerHeight;
   isClick = false;
@@ -56,13 +57,14 @@ window.onload = function(){
   for(var i=0; i<4; i++){
     oTheme[i].onmouseover = function(){
       startMove(this, {
-        height: parseInt(0.4 * Height),
-        marginTop: parseInt(0.2 * Height)
+        height: parseInt(0.3 * Height),
+        marginTop: parseInt(0.3 * Height),
       }, 20);
       this.children[1].style.display = 'block';
       startMove(this.children[1], {
-        marginTop: parseInt(0.30 * Height)
+        marginTop: parseInt(0.22 * Height)
       }, 20);
+
     }
     oTheme[i].onmouseout = function(){
       startMove(this, {
@@ -71,7 +73,7 @@ window.onload = function(){
       }, 20);
       this.children[1].style.display = 'none';
       startMove(this.children[1], {
-        marginTop: parseInt(0.10 * Height)
+        marginTop: parseInt(0.12 * Height)
       }, 20);
     }
   }
@@ -83,14 +85,14 @@ window.onload = function(){
     //側邊切換主題 + 隱藏頂部
     if(t >= 750) {
       startMove(oSidepoint, {
-        marginTop: t - 650
+        marginTop: t - 1100
       }, 20);
       startMove(oCm, {
         marginTop: parseInt(-1.1 * Height)
       }, 20);
     }else {
       startMove(oSidepoint, {
-        marginTop: 100
+        marginTop: -450
       }, 20);
       startMove(oCm, {
         marginTop: parseInt(-1 * Height)

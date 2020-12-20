@@ -1,5 +1,6 @@
 function changeContent(){
   var oMain = document.getElementById('Main');
+  var oFooter = document.getElementById('Footer');
 
   for(var i=0; i<4; i++){
     //上方按鈕
@@ -23,6 +24,7 @@ function changeContent(){
       startMove(oContent[this.index], {
         opacity: 100
       }, 20);
+      oFooter.style.display = 'block'
     }
 
     bSide.onclick = function(){
@@ -37,6 +39,7 @@ function changeContent(){
       startMove(oContent[this.index], {
         opacity: 100
       }, 20);
+      oFooter.style.display = 'block'
     }
   }
 }

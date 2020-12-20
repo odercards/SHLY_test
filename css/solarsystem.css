@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow");
 body {
-  font: 14px/1.5 "PT Sans Narrow", sans-serif;
   color: #626668;
 }
 
@@ -230,6 +229,21 @@ ul.solarsystem li.pluto {
 }
 
 ul.solarsystem li.pluto span {
+  background: #7c6a5c;
+  top: 1000px;
+  left: 973px;
+}
+
+ul.solarsystem li.test {
+  width: 1px;
+  height: 1000px;
+  background: white;
+  top: -262px;
+  left: 478.5px;
+  z-index: 90;
+}
+
+ul.solarsystem li.test span {
   background: #7c6a5c;
   top: 1000px;
   left: 973px;
