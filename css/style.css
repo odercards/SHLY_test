@@ -141,19 +141,19 @@ body {
 }
 
 #Main .content:first-child {
-  background: red;
+  background: #6e1d1d;
 }
 
 #Main .content:nth-child(2) {
-  background: blue;
+  background: #274b6e;
 }
 
 #Main .content:nth-child(3) {
-  background: yellow;
+  background: #144f1c;
 }
 
 #Main .content:nth-child(4) {
-  background: green;
+  background: #4f4e14;
 }
 
 .content1, .content2, .content3, .content4 {
