@@ -16,13 +16,13 @@ function changeContent(){
       for(var j=0; j<4; j++){
         startMove(oContent[j], {
           opacity: 0
-        });
+        }, 20);
         oContent[j].style.display = 'none';
       }
       oContent[this.index].style.display = 'block';
       startMove(oContent[this.index], {
         opacity: 100
-      });
+      }, 20);
     }
 
     bSide.onclick = function(){
@@ -30,13 +30,13 @@ function changeContent(){
       for(var j=0; j<4; j++){
         startMove(oContent[j], {
           opacity: 0
-        });
+        }, 20);
         oContent[j].style.display = 'none';
       }
       oContent[this.index].style.display = 'block';
       startMove(oContent[this.index], {
         opacity: 100
-      });
+      }, 20);
     }
   }
 }

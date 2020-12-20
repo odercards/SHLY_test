@@ -39,13 +39,13 @@ window.onload = function(){
     if(isClick == false){
       startMove(oCm, {
         marginTop: 0
-      });
+      }, 20);
       document.documentElement.style.overflowY = 'hidden'; 
       isClick = !isClick;
     }else if(isClick == true){
       startMove(oCm, {
         marginTop: parseInt(-1 * Height)
-      });
+      }, 20);
       document.documentElement.style.overflowY = 'scroll'; 
       isClick = !isClick;
     }
@@ -58,21 +58,21 @@ window.onload = function(){
       startMove(this, {
         height: parseInt(0.4 * Height),
         marginTop: parseInt(0.2 * Height)
-      });
+      }, 20);
       this.children[1].style.display = 'block';
       startMove(this.children[1], {
         marginTop: parseInt(0.30 * Height)
-      });
+      }, 20);
     }
     oTheme[i].onmouseout = function(){
       startMove(this, {
         height: parseInt(0.2 * Height),
         marginTop: parseInt(0.4 * Height)
-      });
+      }, 20);
       this.children[1].style.display = 'none';
       startMove(this.children[1], {
         marginTop: parseInt(0.10 * Height)
-      });
+      }, 20);
     }
   }
 
@@ -83,18 +83,18 @@ window.onload = function(){
     //側邊切換主題 + 隱藏頂部
     if(t >= 750) {
       startMove(oSidepoint, {
-        marginTop: t - 750
-      });
+        marginTop: t - 650
+      }, 20);
       startMove(oCm, {
         marginTop: parseInt(-1.1 * Height)
-      });
+      }, 20);
     }else {
       startMove(oSidepoint, {
-        marginTop: 0
-      });
+        marginTop: 100
+      }, 20);
       startMove(oCm, {
         marginTop: parseInt(-1 * Height)
-      });
+      }, 20);
     }
   }
 }

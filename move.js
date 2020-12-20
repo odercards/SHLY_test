@@ -1,4 +1,4 @@
-function startMove(obj, json){
+function startMove(obj, json, tick){
   clearInterval(obj.timer);
 
   // 速度
@@ -21,7 +21,7 @@ function startMove(obj, json){
       }
 
       // 2.速度
-      speed = (json[key] - currentValue) / 20;
+      speed = (json[key] - currentValue) / tick;
       speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
 
       // 3.運動處理

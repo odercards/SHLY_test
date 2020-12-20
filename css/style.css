@@ -67,7 +67,7 @@ body {
 #Banner {
   width: 100vw;
   height: 95vh;
-  background: #444a96;
+  background: #deab68;
   position: relative;
   z-index: 800;
 }
@@ -80,6 +80,13 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 );
   position: relative;
   z-index: 0;
+}
+
+#Banner .logo img {
+  width: 60vw;
+  position: absolute;
+  margin-left: 20vw;
+  margin-top: 5vh;
 }
 
 #Banner #box {
