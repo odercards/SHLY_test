@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow")
+
+body
+  font: 14px/1.5 "PT Sans Narrow", sans-serif
+  // background: #080e24 url(http://neography.com/experiment/circles/solarsystem/bg.jpg) repeat
+  color: #626668
+
+/* Solar System Styles
+
+ul
+  &.solarsystem
+    position: relative
+    height: 640px
+    list-style: none
+    -webkit-transition: all 0.09s ease-in
+    -moz-transition: all 0.09s ease-in
+    -o-transition: all 0.09s ease-in
+    transition: all 0.09s ease-in
+    // overflow: hidden
+    filter: blur(0px)
+
+    li
+      text-indent: -9999px
+      display: block
+      position: absolute
+      border: 3px solid rgba(254, 255, 219, 0.4)
+
+      /*    opacity: 0.7;
+
+      span
+        display: block
+        position: absolute
+        width: 10px
+        height: 10px
+        -webkit-border-radius: 5px
+        -moz-border-radius: 5px
+        border-radius: 5px
+
+      &.active
+        border-color: #aa4200
+
+        &.sun, span
+          -webkit-transform: scale(1.3)
+          -moz-transform: scale(1.3)
+          -o-transform: scale(1.3)
+          transform: scale(1.3)
+
+        &.sun span, &.earth .moon
+          border: none
+          -webkit-box-shadow: none
+          -moz-box-shadow: none
+          box-shadow: none
+
+      &.sun
+        width: 80px //40
+        height: 80px
+        -webkit-border-radius: 40px
+        -moz-border-radius: 40px
+        border-radius: 40px
+        background: #fc3
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.22, rgb(204, 153, 0)), color-stop(1, rgb(255, 219, 112)))
+        background-image: -moz-linear-gradient(center bottom, rgb(204, 153, 0) 22%, rgb(255, 219, 112) 100%)
+        top: 282px
+        left: 442px
+        border: none
+        -webkit-box-shadow: 0 0 100px #c90
+        -moz-box-shadow: 0 0 100px #c90
+        box-shadow: 0 0 100px #c90
+        z-index: 100
+        -webkit-transition: all 0.2s ease-in
+        -moz-transition: all 0.2s ease-in
+        -o-transition: all 0.2s ease-in
+        transition: all 0.2s ease-in
+
+        span
+          width: 60px
+          height: 60px
+          -webkit-border-radius: 30px
+          -moz-border-radius: 30px
+          border-radius: 30px
+
+      &.mercury
+        width: 200px //100
+        height: 200px
+        -webkit-border-radius: 104px
+        -moz-border-radius: 104px
+        border-radius: 104px
+        top: 218px
+        left: 378px
+        z-index: 99
+
+        span
+          background: #b6bac5
+          top: 24px
+          left: 24px
+
+      &.venus
+        width: 320px //160
+        height: 320px
+        -webkit-border-radius: 164px
+        -moz-border-radius: 164px
+        border-radius: 164px
+        top: 158px
+        left: 318px
+        z-index: 98
+
+        span
+          background: #bf8639
+          top: 118px
+          left: 0px
+
+      &.earth
+        width: 440px //220
+        height: 440px
+        -webkit-border-radius: 224px
+        -moz-border-radius: 224px
+        border-radius: 224px
+        top: 98px
+        left: 258px
+        z-index: 97
+
+        span
+          background: #06c
+          top: 56px
+          left: 368px
+
+          &.moon
+            width: 4px
+            height: 4px
+            -webkit-border-radius: 2px
+            -moz-border-radius: 2px
+            border-radius: 2px
+            background: #ccc
+            top: 12px
+            left: 12px
+
+      &.mars
+        width: 560px //280
+        height: 560px
+        -webkit-border-radius: 284px
+        -moz-border-radius: 284px
+        border-radius: 284px
+        top: 38px
+        left: 198px
+        z-index: 96
+
+        span
+          background: #aa4200
+          top: 537px
+          left: 175px
+
+      &.asteroids_meteorids
+        top: 155px
+        left: 315px
+        z-index: 1
+        background: url(http://neography.com/experiment/circles/solarsystem/asteroids_meteorids.png) no-repeat 0 0
+        width: 660px //330
+        height: 660px
+        -webkit-border-radius: 330px
+        -moz-border-radius: 330px
+        border-radius: 330px
+        border: none
+
+      &.jupiter
+        width: 680px //340
+        height: 680px
+        -webkit-border-radius: 344px
+        -moz-border-radius: 344px
+        border-radius: 344px
+        top: -22px
+        left: 138px
+        z-index: 95
+
+        span
+          background: #e0ae6f
+          top: 550px
+          left: 600px
+
+      &.saturn
+        width: 800px //400
+        height: 800px
+        -webkit-border-radius: 404px
+        -moz-border-radius: 404px
+        border-radius: 404px
+        top: -82px
+        left: 78px
+        z-index: 94
+
+        span
+          background: #dfd3a9
+          top: 24px
+          left: 243px
+
+          &.ring
+            width: 12px
+            height: 12px
+            -webkit-border-radius: 8px
+            -moz-border-radius: 8px
+            border-radius: 8px
+            background: none
+            border: 2px solid #5a4e34
+            left: -3px
+            top: -3px
+            -webkit-transform: skewY(50deg)
+            -moz-transform: skewY(50deg)
+            -o-transform: skewY(50deg)
+            transform: skewY(50deg)
+
+      &.uranus
+        width: 920px //460
+        height: 920px
+        -webkit-border-radius: 464px
+        -moz-border-radius: 464px
+        border-radius: 464px
+        top: -142px
+        left: 18px
+        z-index: 93
+
+        span
+          background: #82b3d1
+          top: 500px
+          left: -4px
+
+      &.neptune
+        width: 1040px //520
+        height: 1040px
+        -webkit-border-radius: 524px
+        -moz-border-radius: 524px
+        border-radius: 524px
+        top: -202px
+        left: -42px
+        z-index: 92
+
+        span
+          background: #77c2ec
+          top: 100px
+          left: 200px
+
+      &.pluto
+        width: 1160px //580
+        height: 1160px
+        -webkit-border-radius: 584px
+        -moz-border-radius: 584px
+        border-radius: 584px
+        top: -262px
+        left: -102px
+        z-index: 91
+
+        span
+          background: #7c6a5c
+          top: 1000px
+          left: 973px
+
+  &.solarsystem li
+    -webkit-animation-iteration-count: infinite
+    -webkit-animation-timing-function: linear
+    -webkit-animation-name: orbit
+    -moz-animation-iteration-count: infinite
+    -moz-animation-timing-function: linear
+    -moz-animation-name: orbit
+
+    &.earth span
+      -webkit-animation-iteration-count: infinite
+      -webkit-animation-timing-function: linear
+      -webkit-animation-name: moon
+      -moz-animation-iteration-count: infinite
+      -moz-animation-timing-function: linear
+      -moz-animation-name: moon
+
+    &.mercury
+      -webkit-animation-duration: 5s
+      -moz-animation-duration: 5s
+
+    &.venus
+      -webkit-animation-duration: 8s
+      -moz-animation-duration: 8s
+
+    &.earth
+      -webkit-animation-duration: 12s
+      -moz-animation-duration: 12s
+
+      span
+        -webkit-animation-duration: 2s
+        -moz-animation-duration: 2s
+
+    &.mars
+      -webkit-animation-duration: 20s
+      -moz-animation-duration: 20s
+
+    &.asteroids_meteorids
+      -webkit-animation-duration: 50s
+      -moz-animation-duration: 50s
+
+    &.jupiter
+      -webkit-animation-duration: 30s
+      -moz-animation-duration: 30s
+
+    &.saturn
+      -webkit-animation-duration: 60s
+      -moz-animation-duration: 60s
+
+    &.uranus
+      -webkit-animation-duration: 70s
+      -moz-animation-duration: 70s
+
+    &.neptune
+      -webkit-animation-duration: 100s
+      -moz-animation-duration: 100s
+
+    &.pluto
+      -webkit-animation-duration: 120s
+      -moz-animation-duration: 120s
+
+/* CSS3 Animations
+
+@-webkit-keyframes orbit
+  from
+    -webkit-transform: rotate(0deg)
+
+  to
+    -webkit-transform: rotate(360deg)
+
+@-webkit-keyframes moon
+  from
+    -webkit-transform: rotate(0deg)
+
+  to
+    -webkit-transform: rotate(360deg)
+
+@-moz-keyframes orbit
+  from
+    -moz-transform: rotate(0deg)
+
+  to
+    -moz-transform: rotate(360deg)
+
+@-moz-keyframes moon
+  from
+    -moz-transform: rotate(0deg)
+
+  to
+    -moz-transform: rotate(360deg)
+
+// ul.solarsystem:hover li
+//   -webkit-animation-play-state: paused

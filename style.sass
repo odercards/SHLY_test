@@ -1,0 +1,89 @@
+*
+  margin: 0
+  padding: 0
+  // border: red 1px solid
+body::-webkit-scrollbar //chrome
+  display: none
+body //IE
+  -ms-overflow-style: none
+  background: black
+
+//高度坍塌
+.clearfix:after, .clearfix:before
+  content: ""
+  display: block
+  clear: both
+  overflow: hidden
+  visibilitiy: hidden
+  height: 0
+
+#SideSolar
+  width: 970px
+  height: 650px
+  margin-top: calc(120vh - 250px)
+  margin-left: calc(50vw - 485px)
+  position: absolute
+  z-index: 0
+  filter: blur(2px)
+
+#CM
+  width: 100vw
+  height: 100vh
+  background: #666666
+  margin-top: -100vh
+  position: fixed
+  // display: none
+  z-index: 900
+#CM .cmBtn
+  width: 100px
+  height: 100px
+  background: red
+  position: absolute
+  margin-top: calc(100vh - 50px)
+  margin-left: calc(50vw - 50px)
+
+#Banner
+  width: 100vw
+  height: 95vh
+  background: #444a96
+  position: relative
+  z-index: 800
+#BannerB
+  width: 100vw
+  height: 35vh
+  background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%) /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%) /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 ) /* IE6-9 */
+  position: relative
+  z-index: 0
+
+#Banner #box
+  margin: 0 auto
+  padding: 40vh 0 0 0
+  width: 76vw
+  height: 60vh
+#Banner .theme
+  width: 15vw
+  height: 100%
+  margin: 0 2vw
+  float: left
+  background: black
+#Banner .cursor
+  margin-top: 55vh 
+  margin-left: calc(50% - 7px)
+  width: 0
+  height: 0
+  border-style: solid
+  border-width: 21.7px 12.5px 0 12.5px
+  border-color: #ffffff transparent transparent transparent
+
+
+#Main
+  width: 100vw
+  height: 500vh
+  background: #000000 /* Old browsers */
+  background: -moz-linear-gradient(top,  #000000 0%, #000000 10%, #676ebf 35%, #676ebf 100%) /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #000000 0%,#000000 10%, #676ebf 35%,#676ebf 100%) /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #000000 0%,#000000 10%, #676ebf 35%,#676ebf 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#676ebf',GradientType=0 ) /* IE6-9 */

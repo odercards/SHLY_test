@@ -1,0 +1,64 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    title 星伙聊原 | 帶你探索古代天文異象
+    script(type="text/javascript", src="../odercards.js")
+    link(type="text/css", rel="stylesheet", href="../css/style.css")
+    link(type="text/css", rel="stylesheet", href="../css/solarsystem.css")
+    //- cd
+    //- pug -w ./ -o ./html -P
+  body
+    #SideSolar.clearfix
+      ul.solarsystem
+        li.sun
+          a(href='#sun')
+            span Sun
+        li.mercury
+          a(href='#mercury')
+            span Mercury
+        li.venus
+          a(href='#venus')
+            span Venus
+        li.earth
+          a(href='#earth')
+            span
+              | Earth
+              span.moon & Moon
+        li.mars
+          a(href='#mars')
+            span Mars
+        li.asteroids_meteorids
+          span Asteroids & Meteorids
+        li.jupiter
+          a(href='#jupiter')
+            span Jupiter
+        li.saturn
+          a(href='#saturn')
+            span
+              | Saturn & 
+              span.ring Ring
+        li.uranus
+          a(href='#uranus')
+            span Uranus
+        li.neptune
+          a(href='#neptune')
+            span Neptune
+        li.pluto
+          a(href='#pluto')
+            span Pluto
+    #CM
+      .cmBtn
+    #Banner
+      .logo
+      #box.clearfix
+        .theme
+          .cursor
+        .theme
+          .cursor
+        .theme
+          .cursor
+        .theme
+          .cursor
+    #BannerB
+    #Main
