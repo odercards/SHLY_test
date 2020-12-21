@@ -20,7 +20,7 @@ function changeContent(){
         }, 20);
         oContent[j].style.display = 'none';
       }
-      oContent[this.index].style.display = 'block';
+      oContent[this.index].style.display = 'inline';
       startMove(oContent[this.index], {
         opacity: 100
       }, 20);
@@ -35,7 +35,7 @@ function changeContent(){
         }, 20);
         oContent[j].style.display = 'none';
       }
-      oContent[this.index].style.display = 'block';
+      oContent[this.index].style.display = 'inline';
       startMove(oContent[this.index], {
         opacity: 100
       }, 20);

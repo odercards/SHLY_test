@@ -13,6 +13,10 @@ window.onload = function(){
 
   //外連區
   changeContent();
+  changeManga0();
+  changeManga1();
+  changeManga2();
+  changeManga3();
 
 
   //螢幕過小，限制觀看
@@ -62,7 +66,7 @@ window.onload = function(){
       }, 20);
       this.children[1].style.display = 'block';
       startMove(this.children[1], {
-        marginTop: parseInt(0.22 * Height)
+        marginTop: parseInt(0.14 * Height)
       }, 20);
 
     }
@@ -73,7 +77,7 @@ window.onload = function(){
       }, 20);
       this.children[1].style.display = 'none';
       startMove(this.children[1], {
-        marginTop: parseInt(0.12 * Height)
+        marginTop: parseInt(0.04 * Height)
       }, 20);
     }
   }
