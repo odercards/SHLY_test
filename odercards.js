@@ -20,7 +20,7 @@ window.onload = function(){
 
 
   //螢幕過小，限制觀看
-  if(Width < 1200){
+  if(Width < 1400){
     document.documentElement.style.overflowY = 'hidden'; 
     oNone.style.display = 'block';
   }else{
@@ -89,10 +89,10 @@ window.onload = function(){
     //側邊切換主題 + 隱藏頂部
     if(t >= 750) {
       startMove(oSidepoint, {
-        marginTop: t - 1100
+        marginTop: t - 1300
       }, 20);
       startMove(oCm, {
-        marginTop: parseInt(-1.1 * Height)
+        marginTop: parseInt(-1.2 * Height)
       }, 20);
     }else {
       startMove(oSidepoint, {
