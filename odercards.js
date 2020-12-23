@@ -89,14 +89,14 @@ window.onload = function(){
     //側邊切換主題 + 隱藏頂部
     if(t >= 750) {
       startMove(oSidepoint, {
-        marginTop: t - 1300
+        marginTop: t - 1100
       }, 20);
       startMove(oCm, {
         marginTop: parseInt(-1.2 * Height)
       }, 20);
     }else {
       startMove(oSidepoint, {
-        marginTop: -450
+        marginTop: -250
       }, 20);
       startMove(oCm, {
         marginTop: parseInt(-1 * Height)

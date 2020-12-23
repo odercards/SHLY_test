@@ -1,9 +1,9 @@
 .sep
-  width: 50px
-  height: 50px
-  margin-left: calc( 50vw - 25px )
-  margin-top: 200px
-  margin-bottom: 250px
+  width: 150px
+  height: 150px
+  margin-left: calc( 50vw - 75px )
+  margin-top: 350px
+  margin-bottom: 400px
   border-radius: 50%
 
   
@@ -19,19 +19,20 @@
   height: 500vh
   // margin-left: 10vw
   margin-top: -100vh
-  padding: 100vh 0 0 0
+  padding: 125vh 0 0 0
   position: absolute
   z-index: -10
   display: none
   opacity: 0
   &:first-child
-    background: #ffa8a7 //#c49deb
+    height: 550vh
+    background: url(../img/d75911ed.png) repeat   //內容1背景顏色
   &:nth-child(2)
-    background: url(../img/bg2.jpg) repeat
+    background: url(../img/d75911ed.png) repeat   //內容2背景顏色
   &:nth-child(3)
-    background: url(../img/bg2.jpg) repeat
+    background: url(../img/d75911ed.png) repeat   //內容3背景顏色
   &:nth-child(4)
-    background: url(../img/bg2.jpg) repeat
+    background: url(../img/d75911ed.png) repeat   //內容4背景顏色
 .content h1
   color: white
   font-size: 60px
@@ -45,13 +46,13 @@
 .content h3
   height: 50px
   margin: 0
-  color: white
+  color: white                                    //開頭文字顏色
   font-size: 48px
   line-height: 48px
   text-align: center
 .content .sentence p
   margin-top: 10px
-  color: white
+  color: white                                    //開頭逗號顏色
   font-size: 120px
   line-height: 40px
   &.one
@@ -72,23 +73,33 @@
     height: 0
     border-style: solid
     border-width: 50px 50px 0 0
-    border-color: #ff7575 transparent transparent transparent
+    border-color: #AFE074 transparent transparent transparent
 .content .textbar
+  margin-top: 100px 
   h2
     margin: 70px 0 10px
-    color: #f2f2f2
+    color: #dfd3d2                              //中標題顏色
     font-size: 36px
     line-height: 36px
     text-align: left
+    font-weight: 900
   p
-    color: #ffdede
+    margin: 0 20px 0 30px
+    color: #f2f2f2                              //文本顏色 #cdeffa
     font-size: 28px
-    line-height: 36px
+    line-height: 40px
+    font-weight: 550
+    // letter-spacing: 0.5px
     span
-      color: #ff6666
+      color: #ff6666                            //文本強化字顏色
       font-weight: 1000
       font-size: 36px
       line-height: 48px
+  .ref
+    margin: 0px 70px 30px
+    color: white                                  //引用文字顏色
+    font-size: 20px
+    line-height: 30px
   
 .content .showbox
   height: 80vh

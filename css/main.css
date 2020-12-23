@@ -1,9 +1,9 @@
 .sep {
-  width: 50px;
-  height: 50px;
-  margin-left: calc( 50vw - 25px);
-  margin-top: 200px;
-  margin-bottom: 250px;
+  width: 150px;
+  height: 150px;
+  margin-left: calc( 50vw - 75px);
+  margin-top: 350px;
+  margin-bottom: 400px;
   border-radius: 50%;
 }
 
@@ -15,7 +15,7 @@
   width: 100vw;
   height: 500vh;
   margin-top: -100vh;
-  padding: 100vh 0 0 0;
+  padding: 125vh 0 0 0;
   position: absolute;
   z-index: -10;
   display: none;
@@ -23,19 +23,20 @@
 }
 
 #Main .content:first-child {
-  background: #ffa8a7;
+  height: 550vh;
+  background: url(../img/d75911ed.png) repeat;
 }
 
 #Main .content:nth-child(2) {
-  background: url(../img/bg2.jpg) repeat;
+  background: url(../img/d75911ed.png) repeat;
 }
 
 #Main .content:nth-child(3) {
-  background: url(../img/bg2.jpg) repeat;
+  background: url(../img/d75911ed.png) repeat;
 }
 
 #Main .content:nth-child(4) {
-  background: url(../img/bg2.jpg) repeat;
+  background: url(../img/d75911ed.png) repeat;
 }
 
 .content h1 {
@@ -91,21 +92,28 @@
   height: 0;
   border-style: solid;
   border-width: 50px 50px 0 0;
-  border-color: #ff7575 transparent transparent transparent;
+  border-color: #AFE074 transparent transparent transparent;
+}
+
+.content .textbar {
+  margin-top: 100px;
 }
 
 .content .textbar h2 {
   margin: 70px 0 10px;
-  color: #f2f2f2;
+  color: #dfd3d2;
   font-size: 36px;
   line-height: 36px;
   text-align: left;
+  font-weight: 900;
 }
 
 .content .textbar p {
-  color: #ffdede;
+  margin: 0 20px 0 30px;
+  color: #f2f2f2;
   font-size: 28px;
-  line-height: 36px;
+  line-height: 40px;
+  font-weight: 550;
 }
 
 .content .textbar p span {
@@ -113,6 +121,13 @@
   font-weight: 1000;
   font-size: 36px;
   line-height: 48px;
+}
+
+.content .textbar .ref {
+  margin: 0px 70px 30px;
+  color: white;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .content .showbox {
