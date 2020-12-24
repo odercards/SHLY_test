@@ -46,15 +46,26 @@ body {
   margin-left: calc(50vw - 482px);
   position: absolute;
   z-index: 0;
+  display: none;
 }
 
 #CM {
   width: 100vw;
   height: 100vh;
-  background: #666666;
+  background: url(../img/c1edd495.png) repeat;
   margin-top: -100vh;
   position: fixed;
   z-index: 900;
+}
+
+#CM .vidBox {
+  width: 560px;
+  margin: 20vh 1vw 60px 1vw;
+  float: left;
+}
+
+#CM .vidBox:first-child {
+  margin-left: 4vw;
 }
 
 #CM .cmBtn {
@@ -67,12 +78,27 @@ body {
   margin-left: calc(50vw - 100px);
 }
 
+#CM .cmBtn img {
+  width: 550px;
+  height: 300px;
+  margin-top: -50px;
+  margin-left: -160px;
+}
+
 #Banner {
   width: 100vw;
   height: 95vh;
   background: #001132;
   position: relative;
   z-index: 800;
+}
+
+#BannerA {
+  width: 100vw;
+  height: 5vh;
+  background: #dbdbdb;
+  position: relative;
+  z-index: 0;
 }
 
 #BannerB {
@@ -83,6 +109,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 );
   position: relative;
   z-index: 0;
+  display: none;
 }
 
 #Banner .logo img {
@@ -114,17 +141,21 @@ body {
   cursor: pointer;
 }
 
+#Banner .theme:hover .asd {
+  font-size: 44px;
+  line-height: 70px;
+}
+
+#Banner .theme:active .asd {
+  color: yellow;
+}
+
 #Banner .theme .asd {
   color: black;
   margin-top: 20px;
   font-size: 36px;
   line-height: 50px;
   text-align: center;
-}
-
-#Banner .theme .asd:hover {
-  font-size: 48px;
-  line-height: 70px;
 }
 
 #Banner .cursor {
@@ -135,7 +166,7 @@ body {
   display: none;
   border-style: solid;
   border-width: 26px 15px 0 15px;
-  border-color: #ffffff transparent transparent transparent;
+  border-color: #111111 transparent transparent transparent;
   -webkit-animation-name: floating;
           animation-name: floating;
   -webkit-animation-duration: 1s;
@@ -155,13 +186,14 @@ body {
   width: 102px;
   height: 520px;
   position: absolute;
+  display: none;
 }
 
 #Sidepoint .theme {
   width: 100px;
   height: 125px;
   margin: 4px 0 0 0;
-  background: #dbdbdb;
+  background: #cbe3fa;
   position: relative;
   border-radius: 0 10px 10px 0;
 }

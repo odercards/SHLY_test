@@ -11,10 +11,13 @@ function changeManga0(){
   // var oSmallViewUl = oSmallView.getElementsByTagName('ul')[0];
   // var aSmallViewLi = oSmallView.getElementsByTagName('li');
 
+
+
   // 控制下標
   var index = 0;
   // 小圖標下標
   var nClick = 0;
+
 
   // oBigViewUl.style.marginLeft = (window.innerWidth / 2) - 334 + 'px';
   // window.onresize = function(){
@@ -77,12 +80,12 @@ function changeManga0(){
     }, 7);
 
     // 大圖
-    var tempW = aBigViewLi[0].offsetWidth + 30;
+    var tempW = aBigViewLi[1].offsetWidth + 30;
     window.onresize = function(){
-      tempW = aBigViewLi[0].offsetWidth;
+      tempW = aBigViewLi[1].offsetWidth;
       console.log(tempW);
     }
-    
+
     startMove(oBigViewUl, {left: -index * tempW}, 7);
 
     
