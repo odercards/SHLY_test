@@ -92,7 +92,7 @@
   height: 0;
   border-style: solid;
   border-width: 50px 50px 0 0;
-  border-color: #AFE074 transparent transparent transparent;
+  border-color: #bcebc0 transparent transparent transparent;
 }
 
 .content .textbar {
@@ -101,9 +101,9 @@
 
 .content .textbar h2 {
   margin: 70px 0 10px;
-  color: #dfd3d2;
-  font-size: 36px;
-  line-height: 36px;
+  color: #f0ebd8;
+  font-size: 48px;
+  line-height: 52px;
   text-align: left;
   font-weight: 900;
 }
@@ -113,14 +113,14 @@
   color: #f2f2f2;
   font-size: 28px;
   line-height: 40px;
-  font-weight: 550;
+  font-weight: 500;
 }
 
 .content .textbar p span {
-  color: #ff6666;
+  color: #5e6163;
   font-weight: 1000;
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 32px;
+  line-height: 40px;
 }
 
 .content .textbar .ref {

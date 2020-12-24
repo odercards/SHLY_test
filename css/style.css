@@ -167,7 +167,12 @@ body {
 }
 
 #Sidepoint .theme:hover {
-  background: #ff4040;
+  background: #b2d6f3;
+  cursor: help;
+}
+
+#Sidepoint .theme:active {
+  background: #40a9ff;
   cursor: pointer;
 }
 
