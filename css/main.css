@@ -2,7 +2,7 @@
   width: 150px;
   height: 150px;
   margin-left: calc( 50vw - 75px);
-  margin-top: 350px;
+  margin-top: 150px;
   margin-bottom: 400px;
   border-radius: 50%;
 }
@@ -47,7 +47,7 @@
 }
 
 .sentence {
-  margin: 50vh auto 0;
+  margin: 20vh auto 0;
   width: 50vw;
 }
 
@@ -55,8 +55,16 @@
   height: 50px;
   margin: 0;
   color: white;
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.content h4 {
+  height: 50px;
+  margin: 0;
+  color: white;
+  font-size: 32px;
   text-align: center;
 }
 
@@ -72,6 +80,7 @@
 }
 
 .content .sentence p.two {
+  margin-top: 120px;
   text-align: right;
 }
 
@@ -81,7 +90,7 @@
 }
 
 .textbar.t001 {
-  margin-left: 35vw;
+  margin-left: calc( 50vw - 320px);
 }
 
 .textbar .tri {
@@ -92,7 +101,7 @@
   height: 0;
   border-style: solid;
   border-width: 50px 50px 0 0;
-  border-color: #bcebc0 transparent transparent transparent;
+  border-color: #f7daaf transparent transparent transparent;
 }
 
 .content .textbar {
@@ -114,13 +123,19 @@
   font-size: 28px;
   line-height: 40px;
   font-weight: 500;
+  text-shadow: 0.1em 0.1em 0.1em rgba(30, 30, 30, 0.2);
+}
+
+.content .textbar p.p001 {
+  margin-bottom: 20px;
 }
 
 .content .textbar p span {
-  color: #a6e6e0;
+  color: #f7daaf;
   font-weight: 1000;
   font-size: 32px;
   line-height: 40px;
+  text-shadow: 0.1em 0.1em 0.1em rgba(53, 53, 53, 0.3);
 }
 
 .content .textbar .ref {

@@ -51,26 +51,52 @@ body //IE
   // display: none
   z-index: 900
   .vidBox
-    width: 560px
-    margin: 20vh 1vw 60px 1vw
+    width: 30vw
+    height: 17vw
+    margin: 12vh 1vw 60px 1vw
+    iframe
+      width: 30vw
+      height: 17vw
     &:first-child
       margin-left: 4vw
 
     float: left
-#CM .cmBtn
-  width: 200px
-  height: 200px
-  background: red
-  border-radius: 50%
-  position: absolute
-  margin-top: calc(100vh - 100px)
-  margin-left: calc(50vw - 100px)
+#CM 
+  .cmBtn
+    width: 200px
+    height: 200px
+    background: red
+    border-radius: 50%
+    position: absolute
+    margin-top: calc(100vh - 100px)
+    margin-left: calc(50vw - 100px)
   img
     width: 550px 
     height: 300px
     margin-top: -50px
     margin-left: -160px
+  h3
+    width: 30vw
+    height: 60px
+    margin-top: 15px
+    text-align: center
+    color: black
+    line-height: 30px
+    font-size: 30px
+    &:first-child
+      height: 60px
+      text-align: left
+      margin: 0 0 -30px
+      line-height: 15px
+      font-size: 15px
+  p
+    width: 14vw
+    margin-top: 15px
+    margin-left: 8vw
+    color: black
+    font-size: 20px
 
+// border: red 1px solid
 #Banner
   width: 100vw
   height: 95vh
@@ -147,14 +173,15 @@ body //IE
 
 
 #Sidepoint
-  width: 102px
-  height: 520px
-  // background: black
+  width: 54px
+  height: 420px
+  background: #1a403c
   position: absolute
   display: none
+  border-radius: 0 15px 15px 0
 #Sidepoint .theme
-  width: 100px
-  height: 125px
+  width: 50px
+  height: 100px
   margin: 4px 0 0 0
   background: #cbe3fa                           //側滑顏色
   position: relative
@@ -167,8 +194,8 @@ body //IE
     cursor: pointer
 #Sidepoint p
   color: white
-  width: 130px
-  margin: 10px
+  width: 65px
+  margin: 5px
   bottom: 0
   line-height: 24px
   background: black

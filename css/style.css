@@ -59,9 +59,15 @@ body {
 }
 
 #CM .vidBox {
-  width: 560px;
-  margin: 20vh 1vw 60px 1vw;
+  width: 30vw;
+  height: 17vw;
+  margin: 12vh 1vw 60px 1vw;
   float: left;
+}
+
+#CM .vidBox iframe {
+  width: 30vw;
+  height: 17vw;
 }
 
 #CM .vidBox:first-child {
@@ -78,11 +84,37 @@ body {
   margin-left: calc(50vw - 100px);
 }
 
-#CM .cmBtn img {
+#CM img {
   width: 550px;
   height: 300px;
   margin-top: -50px;
   margin-left: -160px;
+}
+
+#CM h3 {
+  width: 30vw;
+  height: 60px;
+  margin-top: 15px;
+  text-align: center;
+  color: black;
+  line-height: 30px;
+  font-size: 30px;
+}
+
+#CM h3:first-child {
+  height: 60px;
+  text-align: left;
+  margin: 0 0 -30px;
+  line-height: 15px;
+  font-size: 15px;
+}
+
+#CM p {
+  width: 14vw;
+  margin-top: 15px;
+  margin-left: 8vw;
+  color: black;
+  font-size: 20px;
 }
 
 #Banner {
@@ -183,15 +215,17 @@ body {
 }
 
 #Sidepoint {
-  width: 102px;
-  height: 520px;
+  width: 54px;
+  height: 420px;
+  background: #1a403c;
   position: absolute;
   display: none;
+  border-radius: 0 15px 15px 0;
 }
 
 #Sidepoint .theme {
-  width: 100px;
-  height: 125px;
+  width: 50px;
+  height: 100px;
   margin: 4px 0 0 0;
   background: #cbe3fa;
   position: relative;
@@ -210,8 +244,8 @@ body {
 
 #Sidepoint p {
   color: white;
-  width: 130px;
-  margin: 10px;
+  width: 65px;
+  margin: 5px;
   bottom: 0;
   line-height: 24px;
   background: black;
