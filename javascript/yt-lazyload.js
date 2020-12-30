@@ -101,7 +101,7 @@ function YTlazyload(){
                     //onclick create iframe
                     this_playbtn.addEventListener('click',function(){
                         this_iframe     = template_iframe.cloneNode();
-                        this_iframe.src = 'https://www.youtube.com/embed/' + this_data_id + '?autoplay=1';
+                        this_iframe.src = 'https://www.youtube.com/embed/' + this_data_id + '?autoplay=1' + '&rel=0';
                         this_content.append(this_iframe);
                     });
                     
