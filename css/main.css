@@ -3,7 +3,7 @@
   height: 150px;
   margin-left: calc( 50vw - 75px);
   margin-top: 150px;
-  margin-bottom: 400px;
+  margin-bottom: 200px;
   border-radius: 50%;
 }
 
@@ -13,7 +13,6 @@
 
 #Main .content {
   width: 100vw;
-  height: 500vh;
   margin-top: -100vh;
   padding: 125vh 0 0 0;
   position: absolute;
@@ -178,6 +177,7 @@
 
 .content .showbox .textSec p {
   margin: 30px;
+  font-size: 20px;
 }
 
 .content .showbox .imgSec {
